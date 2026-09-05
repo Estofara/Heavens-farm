@@ -39,7 +39,7 @@
   .hero-in.d2 { animation-delay: 0.22s; }
   .hero-in.d3 { animation-delay: 0.34s; }
   @keyframes heroIn { to { opacity: 1; transform: translateY(0); } }
-  .underline-fade { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size 0.25s ease; }
+  .underline-fade { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size 0.3s ease; }
   .underline-fade:hover, .underline-fade:focus-visible { background-size: 100% 1px; }
   a:focus-visible, button:focus-visible { outline: 2px solid #C9A44C; outline-offset: 3px; }
 </style>
@@ -124,8 +124,8 @@
         <h2 class="font-display text-3xl sm:text-4xl">About</h2>
 
         <div class="mt-8 space-y-5 text-muted leading-relaxed max-w-xl">
-          <p>We started in livestock management, which is probably why we still think in rotational cycles and view fence lines as load-bearing. Somewhere around 2016, We expanded into agricultural production so we could stop relying solely on suppliers and start managing the full yield myself.</p>
-          <p>These days, we focus on the kind of farm staples people rely on without thinking twice — feed grains, pasture management, and everyday livestock care. Unglamorous, and we like it that way. Reliable yields matter more than trendy crops.</p>
+          <p>We started in livestock management, which is probably why we still think in rotational cycles and view fence lines as load-bearing. Somewhere around 2016, We expanded into agricultural production to diversify our offering and better serve our community.</p>
+          <p>These days, we focus on the kind of farm staples people rely on without thinking twice — feed grains, pasture management, and everyday livestock care. Unglamorous, and we like it that way.</p>
         </div>
 
         <div class="mt-12">
@@ -169,7 +169,7 @@
           If you have a project in mind, tell me a little about it and what you're trying to solve. I read every message myself and reply within a couple of days.
         </p>
 
-        <form class="mt-10 max-w-xl space-y-6" onsubmit="event.preventDefault(); this.querySelector('[data-status]').textContent='Thanks — I\'ll reply soon.';">
+        <form class="mt-10 max-w-xl space-y-6" action="https://estofara.app.n8n.cloud/webhook/website-contact-form" method="POST" onsubmit="this.querySelector('[data-status]').textContent='Thanks — I\'ll reply soon.';">
           <div>
             <label for="name" class="block text-sm text-muted mb-2">Name</label>
             <input id="name" name="name" type="text" required
