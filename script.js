@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------------- Contact form ---------------- */
   // PLACEHOLDER: paste your automation webhook URL here (e.g. an n8n
   // "Webhook" node URL) to make the form actually send data.
-  const FORM_ENDPOINT_URL = ''; // e.g. 'https://your-n8n-instance.com/webhook/easylaunch-contact'
+  const FORM_ENDPOINT_URL = 'https://estofara.app.n8n.cloud/webhook/website-contact-form';
 
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
