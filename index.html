@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============ SEO ============ -->
+  <title>Easylaunch Web | Modern Websites That Launch Ideas</title>
+  <meta name="description" content="Easylaunch Web creates modern, professional websites for businesses, brands, and individuals ready to launch their ideas online.">
+  <meta name="theme-color" content="#0A0E1A">
+
+  <!-- Open Graph (placeholders — replace og:image and og:url with your own) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Easylaunch Web | Modern Websites That Launch Ideas">
+  <meta property="og:description" content="Modern, professional websites for businesses, brands, and individuals ready to launch their ideas online.">
+  <meta property="og:image" content="https://your-domain.com/og-image.jpg"> <!-- PLACEHOLDER: replace with real image -->
+  <meta property="og:url" content="https://your-domain.com"> <!-- PLACEHOLDER: replace with real domain -->
+
+  <!-- Favicon placeholder — replace /favicon.svg with your own mark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234F6BF6'/%3E%3Cpath d='M16 6l7 12H9z' fill='white'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- Skip link for keyboard/screen-reader users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================= NAVIGATION ============================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="nav__brand">
+        <span class="nav__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <path d="M12 2L20 18H4L12 2Z" fill="url(#navGrad)"/>
+            <defs>
+              <linearGradient id="navGrad" x1="4" y1="18" x2="20" y2="2" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4F6BF6"/>
+                <stop offset="1" stop-color="#9B6BFF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        Easylaunch Web
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn--primary btn--nav">Start Your Project</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero__grid">
+        <div class="hero__glow" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <p class="hero__trust">Modern websites · Clean design · Built for growth</p>
+
+          <h1 class="hero__headline">
+            Launch your ideas online.
+          </h1>
+
+          <p class="hero__sub">
+            We create modern, professional websites that help businesses build credibility,
+            attract customers, and grow online.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary btn--lg">Start Your Project</a>
+            <a href="#portfolio" class="btn btn--ghost btn--lg">View Our Work</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <!-- Custom launch/browser illustration (SVG, no stock imagery) -->
+          <svg viewBox="0 0 480 480" class="hero__svg" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="heroGrad1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4F6BF6"/>
+                <stop offset="1" stop-color="#9B6BFF"/>
+              </linearGradient>
+              <linearGradient id="heroGrad2" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#9B6BFF" stop-opacity="0.9"/>
+                <stop offset="1" stop-color="#4F6BF6" stop-opacity="0.4"/>
+              </linearGradient>
+              <radialGradient id="heroGlow" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0" stop-color="#6C7CF7" stop-opacity="0.55"/>
+                <stop offset="1" stop-color="#6C7CF7" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <circle cx="240" cy="230" r="190" fill="url(#heroGlow)"/>
+
+            <!-- grid backdrop -->
+            <g stroke="#2A3358" stroke-width="1" opacity="0.6">
+              <line x1="60" y1="360" x2="420" y2="360"/>
+              <line x1="60" y1="320" x2="420" y2="320"/>
+              <line x1="60" y1="280" x2="420" y2="280"/>
+            </g>
+
+            <!-- browser window -->
+            <g transform="translate(70,90)">
+              <rect x="0" y="0" width="300" height="200" rx="14" fill="#101733" stroke="#2A3358" stroke-width="1.5"/>
+              <rect x="0" y="0" width="300" height="34" rx="14" fill="#151D3D"/>
+              <circle cx="20" cy="17" r="4" fill="#4F6BF6"/>
+              <circle cx="34" cy="17" r="4" fill="#3A4470"/>
+              <circle cx="48" cy="17" r="4" fill="#3A4470"/>
+              <rect x="70" y="10" width="180" height="14" rx="7" fill="#1C2547"/>
+
+              <!-- ascending bars representing growth -->
+              <rect x="24" y="150" width="24" height="28" rx="4" fill="url(#heroGrad1)"/>
+              <rect x="60" y="130" width="24" height="48" rx="4" fill="url(#heroGrad1)"/>
+              <rect x="96" y="105" width="24" height="73" rx="4" fill="url(#heroGrad1)"/>
+              <rect x="132" y="75" width="24" height="103" rx="4" fill="url(#heroGrad1)"/>
+
+              <rect x="180" y="60" width="96" height="10" rx="5" fill="#1C2547"/>
+              <rect x="180" y="80" width="72" height="10" rx="5" fill="#1C2547"/>
+              <rect x="180" y="140" width="96" height="38" rx="8" fill="url(#heroGrad2)" opacity="0.9"/>
+            </g>
+
+            <!-- rocket, launching from the browser corner -->
+            <g transform="translate(300,60) rotate(35)">
+              <path d="M0 40 C0 10 14 -10 14 -10 C14 -10 28 10 28 40 L21 40 L21 55 L14 65 L7 55 L7 40 Z" fill="url(#heroGrad1)"/>
+              <circle cx="14" cy="18" r="5" fill="#0A0E1A"/>
+              <path d="M0 40 L-10 55 L0 50 Z" fill="#9B6BFF"/>
+              <path d="M28 40 L38 55 L28 50 Z" fill="#9B6BFF"/>
+            </g>
+
+            <!-- floating glass chip -->
+            <g transform="translate(300,300)">
+              <rect x="0" y="0" width="120" height="52" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+              <circle cx="24" cy="26" r="10" fill="url(#heroGrad1)"/>
+              <rect x="44" y="16" width="60" height="8" rx="4" fill="rgba(255,255,255,0.5)"/>
+              <rect x="44" y="30" width="40" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= SERVICES ============================= -->
+    <section class="section" id="services" aria-label="Services">
+      <div class="section__inner">
+        <h2 class="section__heading">Everything you need to launch online.</h2>
+
+        <div class="cards-grid">
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><circle cx="6.5" cy="6.5" r="0.6" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Business websites</h3>
+            <p>Professional websites designed to establish credibility and turn visitors into customers.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 18h6"/>
+              </svg>
+            </div>
+            <h3>Landing pages</h3>
+            <p>Focused landing pages designed around a specific product, service, campaign, or goal.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 4v6h6"/><path d="M20 20v-6h-6"/><path d="M5.5 15A8 8 0 0119 8.5"/><path d="M18.5 9A8 8 0 015 15.5"/>
+              </svg>
+            </div>
+            <h3>Website redesign</h3>
+            <p>Transform outdated websites into modern, responsive, professional experiences.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="2" y="4" width="20" height="12" rx="2"/><rect x="7" y="18" width="10" height="2" rx="1"/>
+              </svg>
+            </div>
+            <h3>Responsive design</h3>
+            <p>Websites that look great on desktop, tablet, and mobile devices.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="4"/>
+              </svg>
+            </div>
+            <h3>Website optimization</h3>
+            <p>Improve usability, performance, structure, and overall user experience.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M9.5 8.8l5 6.4"/>
+              </svg>
+            </div>
+            <h3>Automation integration</h3>
+            <p>Connect websites with forms, email notifications, AI assistants, and business workflows.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= WHY EASYLAUNCH WEB ============================= -->
+    <section class="section section--alt" id="why" aria-label="Why Easylaunch Web">
+      <div class="section__inner why">
+        <div class="why__text">
+          <h2 class="section__heading">More than just a website.</h2>
+          <p class="why__lead">
+            Easylaunch Web builds every project around your actual business goals — not just a
+            template with your logo on it. Every decision, from layout to copy, is made to help
+            your website do its job.
+          </p>
+        </div>
+
+        <div class="why__grid">
+          <div class="why__item">
+            <span class="why__number">A</span>
+            <h3>Modern &amp; professional</h3>
+            <p>Clean, current design that reflects well on your business.</p>
+          </div>
+          <div class="why__item">
+            <span class="why__number">B</span>
+            <h3>Built around your business</h3>
+            <p>Structure and content shaped by your goals, not a generic template.</p>
+          </div>
+          <div class="why__item">
+            <span class="why__number">C</span>
+            <h3>Mobile responsive</h3>
+            <p>Designed to work well on phones, tablets, and desktops alike.</p>
+          </div>
+          <div class="why__item">
+            <span class="why__number">D</span>
+            <h3>Ready to grow</h3>
+            <p>Built on a foundation that can expand as your business does.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PROCESS ============================= -->
+    <section class="section" id="process" aria-label="Our process">
+      <div class="section__inner">
+        <h2 class="section__heading">How we launch your website.</h2>
+
+        <ol class="timeline">
+          <li class="timeline__step">
+            <span class="timeline__index">01</span>
+            <div class="timeline__body">
+              <h3>Discover</h3>
+              <p>We learn about your business, audience, goals, and website requirements.</p>
+            </div>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__index">02</span>
+            <div class="timeline__body">
+              <h3>Design</h3>
+              <p>We create the visual direction and structure of your website.</p>
+            </div>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__index">03</span>
+            <div class="timeline__body">
+              <h3>Build</h3>
+              <p>We turn the approved design into a responsive, functional website.</p>
+            </div>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__index">04</span>
+            <div class="timeline__body">
+              <h3>Launch</h3>
+              <p>We test everything, make final adjustments, and help get your website online.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================= PORTFOLIO ============================= -->
+    <!--
+      NOTE FOR EDITING: Each .portfolio-card below is a demo project.
+      Replace the h3/p text, the "Demo Project" tag, and the href on
+      "View Project" with real client work as it becomes available.
+      The card markup can be duplicated as-is for additional projects.
+    -->
+    <<section class="section section--alt" id="portfolio" aria-label="Portfolio"> <div class="section__inner"> <div class="section__heading reveal"> <span class="eyebrow">Portfolio</span> <h2>Built to make an impression.</h2> <p> Explore a selection of demo websites created to showcase what Easylaunch Web can build for different types of businesses and brands. </p> </div>
+
+<div class="cards-grid cards-grid--portfolio">
+
+  <!-- Luna Café -->
+  <article class="portfolio-card reveal">
+    <div class="portfolio-card__preview portfolio-card__preview--1">
+      <span class="tag">Demo project</span>
+    </div>
+    <h3>Luna Café</h3>
+    <p>
+      A warm, modern café website designed to showcase the menu,
+      atmosphere, and brand while making it easy for customers to visit.
+    </p>
+    <a href="#" class="link-arrow" aria-label="View Luna Café demo project">
+      View project <span aria-hidden="true">→</span>
+    </a>
+  </article>
+
+  <!-- Forge Fitness -->
+  <article class="portfolio-card reveal">
+    <div class="portfolio-card__preview portfolio-card__preview--2">
+      <span class="tag">Demo project</span>
+    </div>
+    <h3>Forge Fitness</h3>
+    <p>
+      A bold fitness website built to present training programs,
+      membership information, and a strong gym brand.
+    </p>
+    <a href="#" class="link-arrow" aria-label="View Forge Fitness demo project">
+      View project <span aria-hidden="true">→</span>
+    </a>
+  </article>
+
+  <!-- Aurelia Studio -->
+  <article class="portfolio-card reveal">
+    <div class="portfolio-card__preview portfolio-card__preview--3">
+      <span class="tag">Demo project</span>
+    </div>
+    <h3>Aurelia Studio</h3>
+    <p>
+      A premium studio concept focused on elegant visuals, services,
+      and a polished digital presence.
+    </p>
+    <a href="#" class="link-arrow" aria-label="View Aurelia Studio demo project">
+      View project <span aria-hidden="true">→</span>
+    </a>
+  </article>
+
+  <!-- Northline Services -->
+  <article class="portfolio-card reveal">
+    <div class="portfolio-card__preview portfolio-card__preview--4">
+      <span class="tag">Demo project</span>
+    </div>
+    <h3>Northline Services</h3>
+    <p>
+      A professional service-business landing page designed to explain
+      the offer clearly and turn visitors into potential leads.
+    </p>
+    <a href="#" class="link-arrow" aria-label="View Northline Services demo project">
+      View project <span aria-hidden="true">→</span>
+    </a>
+  </article>
+
+  <!-- Nova Creative -->
+  <article class="portfolio-card reveal">
+    <div class="portfolio-card__preview portfolio-card__preview--5">
+      <span class="tag">Demo project</span>
+    </div>
+    <h3>Nova Creative</h3>
+    <p>
+      A sleek creative portfolio concept designed to put projects,
+      visual work, and personal branding at the center.
+    </p>
+    <a href="#" class="link-arrow" aria-label="View Nova Creative demo project">
+      View project <span aria-hidden="true">→</span>
+    </a>
+  </article>
+
+  <!-- Velora Store -->
+  <article class="portfolio-card reveal">
+    <div class="portfolio-card__preview portfolio-card__preview--6">
+      <span class="tag">Demo project</span>
+    </div>
+    <h3>Velora Store</h3>
+    <p>
+      An e-commerce concept focused on product presentation,
+      simple browsing, and a clean shopping experience.
+    </p>
+    <a href="#" class="link-arrow" aria-label="View Velora Store demo project">
+      View project <span aria-hidden="true">→</span>
+    </a>
+  </article>
+
+</div>
+
+</div> </section>
+
+    <!-- ============================= ABOUT ============================= -->
+    <section class="section" id="about" aria-label="About">
+      <div class="section__inner about">
+        <div class="about__figure" aria-hidden="true">
+          <div class="about__avatar">
+            <!-- PLACEHOLDER: replace this initial with a real founder photo -->
+            <span>E</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <h2 class="section__heading">Behind Easylaunch Web.</h2>
+          <p>
+            Easylaunch Web started with a simple idea: businesses and individuals deserve a website
+            that actually represents them well, without the confusion or expense that usually comes
+            with getting one built.
+          </p>
+          <p>
+            Every project is treated as a chance to build something the client is proud to point
+            people to — a website that is fast, clear, and easy to trust from the first visit.
+          </p>
+          <p>
+            <!-- PLACEHOLDER: replace with your own founder name / short bio line -->
+            <strong>Founder, Easylaunch Web</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= FAQ ============================= -->
+    <section class="section section--alt" id="faq" aria-label="Frequently asked questions">
+      <div class="section__inner section__inner--narrow">
+        <h2 class="section__heading">Questions, answered.</h2>
+
+        <div class="accordion" id="accordion">
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                How much does a website cost?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Pricing depends on the scope and features of your project. We'll put together a clear, customized quote once we understand what you need.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                How long does a website take?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Timelines vary based on the size and complexity of the site. We'll share an estimated timeline for your specific project after our initial discussion.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                Do you build websites for small businesses?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Yes. We work with small businesses, brands, and individuals who want a professional website without unnecessary complexity.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                Can you redesign my existing website?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Yes. We can rebuild an outdated site into something modern, responsive, and easier for your visitors to use.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                Will my website work on mobile?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Yes. Every website we build is designed mobile-first and tested across common screen sizes.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                Can you connect my website to automation or an AI assistant?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Yes. We can connect your site's forms and workflows to automation platforms, email tools, or AI assistants depending on your needs.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                Can you help me after the website launches?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Yes. We're happy to help with updates, changes, or ongoing support after your site is live — just reach out.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= FINAL CTA ============================= -->
+    <section class="cta" aria-label="Call to action">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="cta__inner">
+        <h2>Ready to launch your website?</h2>
+        <p>Let's turn your idea into a professional online presence.</p>
+        <a href="#contact" class="btn btn--primary btn--lg">Start Your Project</a>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT ============================= -->
+    <section class="section" id="contact" aria-label="Contact">
+      <div class="section__inner section__inner--narrow">
+        <h2 class="section__heading">Tell us about your idea.</h2>
+        <p class="contact__note">We'll take it from there.</p>
+
+        <!--
+          NOTE FOR EDITING (form submission):
+          This form does not send data anywhere by itself. The submit handler
+          lives in script.js (see CONTACT FORM section) and is written so you
+          can drop in a fetch() call to an automation webhook (e.g. n8n) —
+          just fill in FORM_ENDPOINT_URL near the top of script.js.
+        -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="business">Business name</label>
+            <input type="text" id="business" name="business" autocomplete="organization">
+          </div>
+
+          <div class="form-row">
+            <label for="website">Website <span class="optional">(optional)</span></label>
+            <input type="url" id="website" name="website" placeholder="https://">
+          </div>
+
+          <div class="form-row">
+            <label for="need">What do you need?</label>
+            <select id="need" name="need">
+              <option value="">Select one</option>
+              <option value="new-website">A new website</option>
+              <option value="redesign">A redesign of my current website</option>
+              <option value="landing-page">A landing page</option>
+              <option value="automation">Automation / integrations</option>
+              <option value="not-sure">I'm not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--full">Send Project Request</button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="nav__brand">
+          <span class="nav__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+              <path d="M12 2L20 18H4L12 2Z" fill="url(#footGrad)"/>
+              <defs>
+                <linearGradient id="footGrad" x1="4" y1="18" x2="20" y2="2" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#4F6BF6"/>
+                  <stop offset="1" stop-color="#9B6BFF"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          Easylaunch Web
+        </a>
+        <p>Launch your ideas online.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Business websites</a></li>
+          <li><a href="#services">Landing pages</a></li>
+          <li><a href="#services">Website redesign</a></li>
+          <li><a href="#services">Automation integration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <!-- PLACEHOLDER: replace # with your real social links -->
+        <ul class="footer__social">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="X (Twitter)">X / Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Easylaunch Web. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
